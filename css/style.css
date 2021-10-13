@@ -14,6 +14,23 @@
 }
 body {
   font-family: "roboto", sans-serif;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .list {
   list-style: none;
@@ -23,9 +40,9 @@ body {
 }
 .title-section {
   font-size: 36px;
-  line-height: 1.17em;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03;
   color: var(--title-color-second);
 }
 .visually-hidden {
@@ -43,8 +60,8 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 1.19em;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
+  letter-spacing: 0.03;
   color: var(--logo-color);
 }
 .logo-word-dark {
@@ -55,11 +72,14 @@ body {
 }
 
 /*----------------------------main and portfolio page header ---------------------------*/
+.head {
+  border-bottom: solid 1px #ececec;
+}
 .navigation-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.02em;
+  line-height: 1.14;
+  letter-spacing: 0.02;
   text-transform: capitalize;
 }
 .navigation-item > a:link,
@@ -76,8 +96,8 @@ body {
 .header-contacts-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.02em;
+  line-height: 1.14;
+  letter-spacing: 0.02;
 }
 .header-contacts-item > a:link {
   color: var(--contacts-color-dark);
@@ -94,16 +114,16 @@ body {
 .title-hero {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36em;
+  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06;
   text-transform: uppercase;
   color: var(--title-color-hero);
 }
 .btn-hero {
   font-size: 16px;
-  line-height: 1.88em;
-  letter-spacing: 0.06em;
+  line-height: 1.88;
+  letter-spacing: 0.06;
   background-color: var(--hover-focus-color-others);
   color: var(--color-text);
   font-family: inherit;
@@ -116,29 +136,29 @@ body {
 /*---------------------------main page section 2 features----------------------*/
 .title-features {
   font-size: 14px;
-  line-height: 1.14em;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
+  letter-spacing: 0.03;
   text-transform: uppercase;
   color: var(--title-color-third);
 }
 .features-text {
   font-size: 14px;
-  line-height: 1.71em;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
+  letter-spacing: 0.03;
   color: var(--text-color);
 }
 /*--------------------------main page section 4 oue team---------------------------*/
 .our-team-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19em;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
+  letter-spacing: 0.03;
   color: var(--title-color-third);
 }
 .our-team-text {
   font-size: 16px;
-  line-height: 1.19em;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
+  letter-spacing: 0.03;
   color: var(--text-color);
 }
 /*--------------------------------main and portfolio footer-------------------*/
@@ -150,8 +170,8 @@ body {
 }
 .google-address {
   font-size: 14px;
-  line-height: 1.71tm;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
+  letter-spacing: 0.03;
 }
 .vault-item > a.link.google-address {
   color: var(--color-text);
@@ -162,8 +182,8 @@ body {
 }
 .vault-item {
   font-size: 14px;
-  line-height: 1.71em;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
+  letter-spacing: 0.03;
 }
 .vault-item > a:link {
   color: var(--contacts-color-light);
@@ -176,9 +196,9 @@ body {
 .btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63em;
+  line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03;
   color: var(--title-color-third);
   text-transform: capitalize;
   font-family: inherit;
@@ -191,8 +211,8 @@ body {
 /*-------------------------portfolio section 2 projects--------------------------------*/
 .title-project {
   font-size: 18px;
-  line-height: 2em;
-  letter-spacing: 0.06em;
+  line-height: 2;
+  letter-spacing: 0.06;
   color: var(--title-color-third);
 }
 .item-project {
@@ -200,7 +220,7 @@ body {
 }
 .text-project {
   font-size: 16px;
-  line-height: 1.88em;
-  letter-spacing: 0.03em;
+  line-height: 1.88;
+  letter-spacing: 0.03;
   color: var(--text-color);
 }
