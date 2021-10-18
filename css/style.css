@@ -34,7 +34,6 @@ button {
 }
 img {
   display: block;
-  
 }
 .container {
   display: flex;
@@ -42,6 +41,10 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .list {
   list-style: none;
@@ -84,21 +87,21 @@ img {
 .logo-word-light {
   color: var(--logo-word-light);
 }
-.logo-header{
+.logo-header {
   margin-right: 93px;
 }
 /*----------------------------main and portfolio page header ---------------------------*/
 .main-head,
-.head-portfolio {
+.portfolio-head {
   padding-top: 24px;
   padding-bottom: 24px;
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
-.navigation-list{
+.navigation-list {
   display: flex;
- justify-content: center;
- margin-right: 331px;
+  justify-content: center;
+  margin-right: 331px;
 }
 .navigation-item {
   font-weight: 500;
@@ -108,7 +111,7 @@ img {
   text-transform: capitalize;
   margin-right: 50px;
 }
-.navigation-item:last-child{
+.navigation-item:last-child {
   margin-right: 0px;
 }
 .navigation-item > a:link,
@@ -122,9 +125,9 @@ img {
 .navigation-item > a.link.active {
   color: var(--hover-focus-color-others);
 }
-.header-contacts-list
-{display: flex;
-justify-content: center;
+.header-contacts-list {
+  display: flex;
+  justify-content: center;
 }
 .header-contacts-item {
   font-weight: 500;
@@ -133,7 +136,7 @@ justify-content: center;
   letter-spacing: 0.02em;
   margin-right: 50px;
 }
-.header-contacts-item:last-child{
+.header-contacts-item:last-child {
   margin-right: 0px;
 }
 .header-contacts-item > a:link {
@@ -181,38 +184,32 @@ justify-content: center;
   background-color: #188ce8;
 }
 /*---------------------------main page section 2 features----------------------*/
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-left: auto;
-  margin-top: auto;
+.features-list {
+  display: flex;
+}
+.features-item {
+  width: 270px;
+  margin-right: 30px;
+}
+.features-item:nth-child(4n + 4) {
+  margin-right: 0px;
 }
 .title-features {
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color-third);
   margin-bottom: 10px;
 }
-.features-list {
-  display: flex;
-  padding: 0;
-}
-.features-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .features-text {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   color: var(--text-color);
-  width: 270px;
 }
 /*  -----main page section 3------------- */
-.wido {
-  background-color: aqua;
-}
 .titlt-what-we-do {
   width: 376px;
   margin-top: 0;
@@ -350,19 +347,17 @@ justify-content: center;
   color: var(--color-text);
 }
 /*-------------------------portfolio section 2 projects--------------------------------*/
-.projects{
+.projects {
   margin-bottom: 94px;
 }
-.list-project{
- 
+.list-project {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: -30px;
-
 }
 .item-project {
-  flex-basis: calc(100%/3 -30px);
+  flex-basis: calc(100% / 3 -30px);
   margin-left: 30px;
   margin-bottom: 30px;
   text-transform: capitalize;
