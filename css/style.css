@@ -11,6 +11,8 @@
   --logo-word-dark: #000000;
   --logo-word-light: #ffffff;
   --color-text: #ffffff;
+  --border-color: #ececec;
+  --background-color: #f5f4fa;
 }
 body {
   font-family: "roboto", sans-serif;
@@ -25,12 +27,19 @@ h6,
 ul,
 p {
   margin: 0;
-  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
 }
 .container {
-  width: 1170px;
+  display: flex;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 .list {
   list-style: none;
@@ -57,6 +66,9 @@ p {
   clip-path: inset(50%);
   margin: -1px;
 }
+.logo > span {
+  display: inline-block;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -72,8 +84,18 @@ p {
 }
 
 /*----------------------------main and portfolio page header ---------------------------*/
-.head {
-  border-bottom: solid 1px #ececec;
+.main-head,
+.head-portfolio {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+.logo {
+  margin-right: 93px;
+}
+.navigation-list {
+  display: flex;
 }
 .navigation-item {
   font-weight: 500;
@@ -81,6 +103,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02;
   text-transform: capitalize;
+  margin-left: 50px;
 }
 .navigation-item > a:link,
 .navigation-item > a:visited {
@@ -93,11 +116,17 @@ p {
 .navigation-item > a.link.active {
   color: var(--hover-focus-color-others);
 }
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+}
 .header-contacts-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02;
+  margin-left: 50px;
 }
 .header-contacts-item > a:link {
   color: var(--contacts-color-dark);
@@ -105,28 +134,40 @@ p {
 .header-contacts-item > a:hover,
 .header-contacts-item > a:focus {
   color: var(--hover-focus-color-others);
-  /*-------------------------------main page header------------------------------------*/
 }
 /*-----------------------------main page section 1 hero------------------------------*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 280px;
   background-color: #2f303a;
 }
 .title-hero {
+  width: 696px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06;
   text-transform: uppercase;
+  letter-spacing: 0.06;
   color: var(--title-color-hero);
 }
+
 .btn-hero {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border: 0;
+  border-radius: 4px;
   font-size: 16px;
+  font-family: inherit;
   line-height: 1.88;
   letter-spacing: 0.06;
   background-color: var(--hover-focus-color-others);
   color: var(--color-text);
-  font-family: inherit;
 }
 .btn-hero:hover,
 .btn-hero:focus {
@@ -134,39 +175,115 @@ p {
   background-color: #188ce8;
 }
 /*---------------------------main page section 2 features----------------------*/
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-top: auto;
+}
 .title-features {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03;
   text-transform: uppercase;
   color: var(--title-color-third);
+  margin-bottom: 10px;
+}
+.features-list {
+  display: flex;
+  padding: 0;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
 }
 .features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03;
   color: var(--text-color);
+  width: 270px;
 }
-/*--------------------------main page section 4 oue team---------------------------*/
+/*  -----main page section 3------------- */
+.wido {
+  background-color: aqua;
+}
+.titlt-what-we-do {
+  width: 376px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 50px;
+  margin-right: auto;
+}
+.list-what-we-do {
+  display: flex;
+}
+.item-what-we-do:first-child {
+  margin-left: 0px;
+}
+.item-what-we-do {
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-bottom: 94px;
+  margin-right: 0px;
+}
+
+/*-------------------main page section 4 oue team---------------------------*/
+.our-team {
+  background-color: var(--background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.heading-our-team {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-bottom: 50px;
+  margin-right: auto;
+}
+.our-team-item:first-child {
+  margin-left: 0px;
+}
+.our-team-item {
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-bottom: 94px;
+  margin-right: 0px;
+}
 .our-team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03;
   color: var(--title-color-third);
+  text-align: center;
 }
 .our-team-text {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03;
   color: var(--text-color);
+  text-align: center;
 }
 /*--------------------------------main and portfolio footer-------------------*/
 .vault {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.vault > a {
+  margin-bottom: 20px;
 }
 .all-contacts-vault {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-style: normal;
+}
+
+.vault-list {
+  padding-left: 0;
+}
+.vault-item {
+  margin-bottom: 9px;
 }
 .google-address {
   font-size: 14px;
@@ -193,15 +310,33 @@ p {
   color: var(--hover-focus-color-others);
 }
 /*-----------------------------portfolio section 1 button----------------------------*/
+.head-portfolio {
+  margin-bottom: 94px;
+}
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.btn-item {
+  margin-left: 8px;
+}
+.btn-item:first-child {
+  margin-left: 0;
+}
 .btn {
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
+  font-family: inherit;
   line-height: 1.63;
   text-align: center;
+  text-transform: capitalize;
   letter-spacing: 0.03;
   color: var(--title-color-third);
-  text-transform: capitalize;
-  font-family: inherit;
+  background-color: var(--background-color);
 }
 .btn:hover,
 .btn:focus {
@@ -209,14 +344,28 @@ p {
   color: var(--color-text);
 }
 /*-------------------------portfolio section 2 projects--------------------------------*/
+.projects{
+  margin-bottom: 94px;
+}
+.list-project{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+
+}
+.item-project {
+  flex-basis: calc(100%/3 -30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
 .title-project {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06;
   color: var(--title-color-third);
-}
-.item-project {
-  text-transform: capitalize;
 }
 .text-project {
   font-size: 16px;

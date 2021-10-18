@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-   <link href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"rel="stylesheet">
+    <link href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css" rel="stylesheet">
     <link  href="./css/style.css" rel="stylesheet">
   </head>
-
-
 <body>
     <!-------------------header  "Портфоліо" logo and navigation----------------------->
-  <header class="head container">
+  <header>
+    <div class="container head-portfolio">
     <a class="logo link" href="WebStudio">Web<span class="logo-word-dark">Studio</span></a>
     <nav class="navigation-header">
       <ul class="navigation-list list">
@@ -26,13 +25,14 @@
       <li class="header-contacts-item"> <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
       <li class="header-contacts-item"> <a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
+    </div>
   </header>
     <!--основний контент "Портфоліо"-->
-    <main class="special-content container">
+    <main class="special-content">
           <!-----------------------------portfolio section 1 buttons--------------------------- -->
-     <section class="btn-section">
+     <section>
          <h2  class="title-section visually-hidden">Фильтр кнопок</h2>
-      <ul class="btn-list list">
+      <ul class="btn-list container list">
         <li class="btn-item"><button class="btn" type="button">Все</button></li>
         <li class="btn-item"><button class="btn" type="button">Веб-сайты</button></li>
         <li class="btn-item"><button class="btn" type="button">Приложения</button></li>
@@ -41,9 +41,9 @@
       </ul>
      </section>
      <!-----------------------------portfolio section 2 projects------------------------->
-     <section>
+     <section  class="projects">
        <h1 class="title-section visually-hidden">Проекти</h1>
-  <ul class="list-project list">
+       <ul class="list container list-project">
       <li class="item-project" >
         <img src="images/photo1.jpg" alt="computer with photo" width="370" height="294">
         <h3 class="title-project">Технокряк</h3>
@@ -81,20 +81,20 @@
       </li>
       <li class="item-project" >
         <img src="images/photo8.jpg" alt="keychain made of paper" width="370" height="294">
-        <h3>Проект <span lang="en">LAB</span></h3>
+        <h3 class="title-project">Проект <span lang="en">LAB</span></h3>
         <p class="text-project">Маркетинг</p>
       </li>
       <li class="item-project" >
         <img src="images/photo9.jpg" alt="man typing text on laptop" width="370" height="294">
-        <h3><span lang="en">Growing Business</span></h3>
+        <h3 class="title-project"><span lang="en">Growing Business</span></h3>
         <p class="text-project">Приложение</p>
       </li>
   </ul>
      </section>
     </main>
     <!------------------------------portfolio footer------------------------>
-    <footer class="vault container">
-      <a class="logo link" href="WebStudio">Web<span class="logo-word-light">Studio</span></a>
+    <footer class="vault">
+      <a class="link logo container" href="WebStudio">Web<span class="logo-word-light">Studio</span></a>
       <address class="all-contacts-vault">
         <ul class="vault-list list">
           <li class="vault-item"><a class="link google-address" href="https://goo.gl/maps/u1JJwSSeLyqYVt8B6" target="blank"
