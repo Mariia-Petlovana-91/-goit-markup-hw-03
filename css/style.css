@@ -27,12 +27,14 @@ h6,
 ul,
 p {
   margin: 0;
+  padding: 0;
 }
 button {
   cursor: pointer;
 }
 img {
   display: block;
+  
 }
 .container {
   display: flex;
@@ -51,7 +53,7 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   color: var(--title-color-second);
 }
 .visually-hidden {
@@ -72,8 +74,8 @@ img {
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
   color: var(--logo-color);
 }
 .logo-word-dark {
@@ -82,7 +84,9 @@ img {
 .logo-word-light {
   color: var(--logo-word-light);
 }
-
+.logo-header{
+  margin-right: 93px;
+}
 /*----------------------------main and portfolio page header ---------------------------*/
 .main-head,
 .head-portfolio {
@@ -91,19 +95,21 @@ img {
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
-.logo {
-  margin-right: 93px;
-}
-.navigation-list {
+.navigation-list{
   display: flex;
+ justify-content: center;
+ margin-right: 331px;
 }
 .navigation-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-left: 50px;
+  margin-right: 50px;
+}
+.navigation-item:last-child{
+  margin-right: 0px;
 }
 .navigation-item > a:link,
 .navigation-item > a:visited {
@@ -116,17 +122,19 @@ img {
 .navigation-item > a.link.active {
   color: var(--hover-focus-color-others);
 }
-.header-contacts-list {
-  display: flex;
-  margin-left: auto;
-  padding: 0;
+.header-contacts-list
+{display: flex;
+justify-content: center;
 }
 .header-contacts-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.02;
-  margin-left: 50px;
+  letter-spacing: 0.02em;
+  margin-right: 50px;
+}
+.header-contacts-item:last-child{
+  margin-right: 0px;
 }
 .header-contacts-item > a:link {
   color: var(--contacts-color-dark);
@@ -142,11 +150,9 @@ img {
   background-color: #2f303a;
 }
 .title-hero {
+  display: block;
+  margin: 0 auto;
   width: 696px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-bottom: 30px;
-  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -165,7 +171,7 @@ img {
   font-size: 16px;
   font-family: inherit;
   line-height: 1.88;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
   background-color: var(--hover-focus-color-others);
   color: var(--color-text);
 }
