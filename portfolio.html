@@ -11,13 +11,14 @@
   </head>
 <body>
     <!-------------------header  "Портфоліо" logo and navigation----------------------->
-    <header>
-      <div class="container portfolio-head">
+    <header class="portfolio-head">
+      <div class="container ">
+        <div class="lists-header">
       <a class="logo link logo-header" href="WebStudio">Web<span class="logo-word-dark">Studio</span></a>
-      <nav>
+       <nav>
         <ul class="navigation-list list">
-          <li class="navigation-item"><a class="link" href="./index.html">Студия</a></li>
-          <li class="navigation-item"><a class="link active" href="./portfolio.html">Портфолио</a></li>
+          <li class="navigation-item"><a class="link active" href="./index.html">Студия</a></li>
+          <li class="navigation-item"><a class="link" href="./portfolio.html">Портфолио</a></li>
           <li class="navigation-item"><a class="link" href="Контакты">Контакты</a></li>
         </ul> 
       </nav>
@@ -25,76 +26,93 @@
         <li class="header-contacts-item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li class="header-contacts-item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+      </div>
     </div>
     </header>
     <!-----------------------------portfolio section 1 buttons and project--------------------------- -->
     <main class="section">
-    <div class="container">
-    <section>
+    <section class="main-portfolio">
+      <div class="container">
          <h2  class="visually-hidden">Фильтр кнопок</h2>
-      <ul class="list btn-list">
+       <ul class="list btn-list">
         <li class="btn-item"><button class="btn" type="button">Все</button></li>
         <li class="btn-item"><button class="btn" type="button">Веб-сайты</button></li>
         <li class="btn-item"><button class="btn" type="button">Приложения</button></li>
         <li class="btn-item"><button class="btn" type="button">Дизайн</button></li>
         <li class="btn-item"><button class="btn" type="button">Маркетинг</button></li>
-      </ul>
-      </section>
-    </div>
-      <section>
-      <h1 class="visually-hidden">Проекти</h1>
+       </ul>
+       <h1 class="visually-hidden">Проекти</h1>
        <ul class="list list-project">
-      <li class="item-project" >
+       <li class="item-project" >
         <img src="images/photo1.jpg" alt="computer with photo" width="370" height="294">
+        <div class="texts-elements-project">
         <h3 class="title-project">Технокряк</h3>
         <p class="text-project">Веб-сайт</p>
+      </div>
       </li>
-      <li class="item-project" >
+       <li class="item-project" >
         <img src="images/photo2.jpg" alt="two baseball plaeer" width="370" height="294">
+       <div class="texts-elements-project"> 
         <h3 class="title-project">Постер<span lang="en">New Orlean vs Golden Star</span></h3>
         <p class="text-project">Дизайн</p>
+      </div>
       </li>
-      <li class="item-project" >
+       <li class="item-project" >
         <img src="images/photo3.jpg" alt="restaurant logo" width="370" height="294">
+       <div class="texts-elements-project">
         <h3 class="title-project">Ресторан<span lang="en">Seafood</span></h3>
         <p class="text-project">Приложение</p>
+       </div> 
       </li>
-      <li class="item-project" >
+       <li class="item-project" >
         <img src="images/photo4.jpg" alt="headphone" width="370" height="294">
+       <div class="texts-elements-project">
         <h3 class="title-project">Проект<span lang="en">Prime</span></h3>
         <p class="text-project">Маркетинг</p>
+      </div>
       </li>
-      <li class="item-project" >
+       <li class="item-project" >
         <img src="images/photo5.jpg" alt="two boxes" width="370" height="294">
+       <div class="texts-elements-project">
         <h3 class="title-project">Проект<span lang="en"> Boxes</span></h3>
         <p class="text-project">Приложение</p>
+      </div>
       </li>
-      <li class="item-project" >
+       <li class="item-project" >
         <img src="images/photo6.jpg" alt="monitor" width="370" height="294">
+       <div class="texts-elements-project">
         <h3 class="title-project"><span lang="en">Inspiration has no Borders</span></h3>
         <p class="text-project">Веб-сайт</p>
+       </div>
       </li>
-      <li class="item-project" >
+       <li class="item-project" >
         <img src="images/photo7.jpg" alt="unfolded book" width="370" height="294">
+       <div class="texts-elements-project">
         <h3 class="title-project">Издание <span lang="en">Limited Edition</span></h3>
         <p class="text-project">Дизайн</p>
+      </div>
       </li>
-      <li class="item-project" >
+       <li class="item-project" >
         <img src="images/photo8.jpg" alt="keychain made of paper" width="370" height="294">
+      <div class="texts-elements-project">
         <h3 class="title-project">Проект <span lang="en">LAB</span></h3>
         <p class="text-project">Маркетинг</p>
+      </div>
       </li>
-      <li class="item-project" >
+       <li class="item-project" >
         <img src="images/photo9.jpg" alt="man typing text on laptop" width="370" height="294">
+       <div class="texts-elements-project"> 
         <h3 class="title-project"><span lang="en">Growing Business</span></h3>
         <p class="text-project">Приложение</p>
+       </div>
       </li>
-  </ul>
-     </section>
+        </ul>
+       </div>
+   </section>
     </main>
     <!------------------------------portfolio footer------------------------>
-    <footer>
-      <div class="container vault">
+    <footer class="vault">
+      <div class="container ">
         <a class="link logo logo-footer" href="WebStudio">Web<span class="logo-word-light">Studio</span></a>
         <address>
           <ul class="list">
