@@ -313,10 +313,10 @@ address {
   color: var(--hover-focus-color-others);
 }
 /*-----------------------------portfolio section 1 button----------------------------*/
-/* .main-portfolio,
+.main-portfolio,
 .item-project {
   border: 1px solid #eeeeee;
-} */
+}
 .btn-list {
   display: flex;
   justify-content: center;
