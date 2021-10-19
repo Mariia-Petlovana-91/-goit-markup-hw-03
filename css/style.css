@@ -164,7 +164,7 @@ address {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
   color: var(--title-color-hero);
 }
 
@@ -310,19 +310,9 @@ address {
   color: var(--hover-focus-color-others);
 }
 /*-----------------------------portfolio section 1 button----------------------------*/
-.head-portfolio {
-  margin-bottom: 94px;
-}
-.btn-list {
-  display: flex;
+.btn-list{
+  display:flex;
   justify-content: center;
-  margin-bottom: 50px;
-}
-.btn-item {
-  margin-left: 8px;
-}
-.btn-item:first-child {
-  margin-left: 0;
 }
 .btn {
   padding: 6px 22px;
@@ -334,7 +324,7 @@ address {
   line-height: 1.63;
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   color: var(--title-color-third);
   background-color: var(--background-color);
 }
@@ -344,30 +334,19 @@ address {
   color: var(--color-text);
 }
 /*-------------------------portfolio section 2 projects--------------------------------*/
-.projects {
-  margin-bottom: 94px;
-}
-.list-project {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
-}
+
 .item-project {
-  flex-basis: calc(100% / 3 -30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
   text-transform: capitalize;
 }
 .title-project {
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
   color: var(--title-color-third);
 }
 .text-project {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   color: var(--text-color);
 }
